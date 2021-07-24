@@ -3,8 +3,8 @@
   "id": "wie",
   "version": "${version}",
 
-  "name": "Water Imbued Enchantment",
-  "description": "A simple trident enchantment that allow the use of the other enchantments without the need of rain nor being under water",
+  "name": "Water Imbued Enchantment Mod",
+  "description": "Enables the use of riptide without the need of rain nor being under water",
   "authors": [
     "josue0702",
     "driquelme2699",
@@ -21,10 +21,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.TheShire.waterImbuedEnchantmentMod.WaterImbuedEnchantment"
+      "com.theshire.waterimbuedenchantment.Main"
     ]
   },
   "mixins": [
+    "wie.mixins.json"
   ],
 
   "depends": {
