@@ -12,19 +12,23 @@ public class WaterImbuedEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 10 + 20 * (level + 2);
+        return 5;
     }
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return this != other && other != Enchantments.MENDING && other != Enchantments.CHANNELING;
+        if (!Main.SETTINGS.wieMendingCompatible) {
+            return this != other && other != Enchantments.MENDING && other != Enchantments.CHANNELING;
+        } else {
+            return this != other && other != Enchantments.CHANNELING;
+        }
     }
 
     @Override
     public boolean isAvailableForEnchantedBookOffer() {
-        return false;
+        return Main.SETTINGS.wieVillagerSold;
     }
 
     @Override
-    public boolean isAvailableForRandomSelection() { return false; }
+    public boolean isAvailableForRandomSelection() { return Main.SETTINGS.wieTreasure; }
 }

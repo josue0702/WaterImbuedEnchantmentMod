@@ -155,7 +155,8 @@
         },
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.6
+          "chance": 0.6,
+          "looting_multiplier": 0.02
         }
       ]
     },
@@ -180,7 +181,8 @@
         },
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.25
+          "chance": 0.25,
+          "looting_multiplier": 0.2
         }
       ]
     }

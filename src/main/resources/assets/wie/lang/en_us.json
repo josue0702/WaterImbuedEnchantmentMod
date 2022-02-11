@@ -1,4 +1,15 @@
 {
   "enchantment.wie.water_imbued_enchantment" : "Water Imbued",
-  "enchantment.wie.thunder_imbued_enchantment" : "Thunder Imbued"
+  "enchantment.wie.thunder_imbued_enchantment" : "Thunder Imbued",
+
+  "text.autoconfig.wie.title": "WIE & TIE",
+  "text.autoconfig.wie.category.wiecat": "Water Imbued Enchantment",
+  "text.autoconfig.wie.option.wieMendingCompatible": "Compatible with mending",
+  "text.autoconfig.wie.option.wieTreasure": "Is selectable",
+  "text.autoconfig.wie.option.wieVillagerSold": "Villagers can sell it",
+
+  "text.autoconfig.wie.category.tiecat": "Thunder Imbued Enchantment",
+  "text.autoconfig.wie.option.tieMendingCompatible": "Compatible with mending",
+  "text.autoconfig.wie.option.tieTreasure": "Is selectable",
+  "text.autoconfig.wie.option.tieVillagerSold": "Villagers can sell it"
 }

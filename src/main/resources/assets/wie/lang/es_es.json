@@ -1,4 +1,15 @@
 {
   "enchantment.wie.water_imbued_enchantment" : "Imbuido en Agua",
-  "enchantment.wie.thunder_imbued_enchantment" : "Electroimbuido"
+  "enchantment.wie.thunder_imbued_enchantment" : "Electroimbuido",
+
+  "text.autoconfig.wie.title": "WIE & TIE",
+  "text.autoconfig.wie.category.wiecat": "Encantamiento Imbuido en Agua",
+  "text.autoconfig.wie.option.wieMendingCompatible": "Compatible con reparacion",
+  "text.autoconfig.wie.option.wieTreasure": "Es seleccionable",
+  "text.autoconfig.wie.option.wieVillagerSold": "Los aldeanos pueden venderlo",
+
+  "text.autoconfig.wie.category.tiecat": "Encantamiento Electroimbuido",
+  "text.autoconfig.wie.option.tieMendingCompatible": "Compatible con reparacion",
+  "text.autoconfig.wie.option.tieTreasure": "Es seleccionable",
+  "text.autoconfig.wie.option.tieVillagerSold": "Los aldeanos pueden venderlo"
 }

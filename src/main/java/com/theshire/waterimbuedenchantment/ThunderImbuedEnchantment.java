@@ -12,19 +12,23 @@ public class ThunderImbuedEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 10 + 20 * (level + 2);
+        return 5;
     }
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return this != other && other != Enchantments.MENDING && other != Main.WIE && other != Enchantments.RIPTIDE;
+        if (!Main.SETTINGS.tieMendingCompatible) {
+            return this != other && other != Enchantments.MENDING && other != Main.WIE && other != Enchantments.RIPTIDE;
+        } else {
+            return this != other && other != Main.WIE && other != Enchantments.RIPTIDE;
+        }
     }
 
     @Override
     public boolean isAvailableForEnchantedBookOffer() {
-        return false;
+        return Main.SETTINGS.tieVillagerSold;
     }
 
     @Override
-    public boolean isAvailableForRandomSelection() { return false; }
+    public boolean isAvailableForRandomSelection() { return Main.SETTINGS.tieTreasure; }
 }
